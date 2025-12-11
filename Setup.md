@@ -99,6 +99,17 @@ python3 -m http.server 3000
 
 ## Troubleshooting
 
+### Antivirus Software
+
+⚠️ **Warning:** Some antivirus software may interfere with the development server or block network connections. If you experience issues:
+
+- The backend may not start or may be blocked from listening on ports 5000/5001
+- Network requests between frontend and backend may be blocked
+- Consider temporarily disabling your antivirus or adding exceptions for:
+  - The project directory
+  - Ports 5000, 5001, 3000, and 5500
+  - The `dotnet` executable
+
 ### CORS Errors
 
 If you see CORS errors in the browser console, make sure:
@@ -125,11 +136,13 @@ If your frontend runs on a different port, update the CORS configuration in `ser
 
 Unit tests are located in `server/Tests/`. To run the tests:
 
+Tests are to be implimented. 
+
 ```bash
 cd server/Tests
 dotnet test
 ```
 
-**Important:** The test file `PriorityScoringServiceTests.cs` contains test method stubs that need to be implemented. See `assessment.md` for detailed requirements.
+
 
 
