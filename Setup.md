@@ -44,18 +44,18 @@ This is a starter template for the Smart Inbox Engine technical challenge. The p
 
 ### 2. Frontend Setup
 
-You have several options to run the frontend:
+Front-end is implemented in React using the Vite runner.
 
-**Option A: Using VS Code Live Server**
-1. Install the "Live Server" extension in VS Code
-2. Right-click on `client/index.html`
-3. Select "Open with Live Server"
-4. The page will open at `http://127.0.0.1:5500` (or similar)
+1. Navigate to the client directory:
+   ```bash
+   cd client/inbox-engine
+   ```
 
-**Using Python HTTP Server**
-```bash
-cd client
-python3 -m http.server 3000
+2. Restore dependencies and run the application:
+   ```bash
+   npm install
+   npm run dev
+
 # Then open http://localhost:3000 in your browser
 ```
 
@@ -65,6 +65,8 @@ python3 -m http.server 3000
 1. Make sure both the backend and frontend are running
 2. Open the frontend in your browser
 3. You Should see Smart Inbox
+4. Set Today's Date using the Today's Date dropdown, then click "Set Today's Date" button
+5. Click button "Load emails" to load a list of emails
 
 ## API Endpoint
 

@@ -1,0 +1,28 @@
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.card-header.danger {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.card-header.success {
+  background-color: #198754;
+  color: #ffffff;
+
+}
+
+.inbox-engine-main-container {
+    position: relative;
+    margin: 20vh  auto;
+    padding: 1.5rem;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 36px;
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    background-color: #dedede;
+}
